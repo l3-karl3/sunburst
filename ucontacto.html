@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACTO</title>
+    <link rel="icon" href="static/img/logo.ico">
+    <link rel="stylesheet" href="static/css/unavegadorofical.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="static/css/duff.css">
+    <link rel="stylesheet" href="static/css/contactoficial.css">
+    <link rel="stylesheet" href="static/css/sub.css">
+
+</head>
+
+<body>
+
+    <header>
+        <a href="uindex.html" class="brand">tiendas 3b</a>
+        <div class="menu">
+            <div class="btn">
+                <i class="fas fa-times close-btn"></i>
+            </div>
+            
+            <a class="nav-link" href="uindex.html">Home <i class="fas fa-home"></i></a> 
+            <a class="nav-link" href="ucontacto.html">contacto </i></a>
+                      
+            <ul id="menu1">
+            
+                <li>
+                    <a  href=""><i class="fas fa-user-circle"></i>  Mi cuenta</a>
+                <ul>
+                    <li><a  href="pago.html"> Carrito</a></li>
+                    <li><a href="">Historial</a></li>
+                    <li><a href="salir.html">Salir</a></li>
+                  </ul>  
+                </li>
+            </ul>
+        </div>
+
+        </nav> 
+        <div class="btn">
+            <i class="fas fa-bars menu-btn"></i>
+        </div>
+    </header>
+    <section class="section-main">
+        
+        <div class="contact-section">
+            <div class="contact-info">
+                <div><i class="fas fa-map-marker-alt"></i>Rio Danubio 51 Cuauhtemoc 06500 Cuauhtemoc</div>
+                <div><i class="fas fa-envelope"></i>contacto@tiendas3b.com</div>
+                <div><i class="fas fa-phone"></i>(52)55-4510-9999</div>
+                <div><i class="fas fa-clock"></i>Mon - Fri 8:00 AM to 5:00 PM</div>
+            </div>
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+              
+                    <form class="contact" action="" method="post">
+                    <input type="text" name="name" class="text-box" placeholder="Your Name" required>
+                    <input type="email" name="email" class="text-box" placeholder="Your Email" required>
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+              
+                   <input type="submit" name="submit" class="send-btn" value="Send">
+                </form> 
+              
+          </div>
+        </div>
+
+    </section>
+    <section class="section-two">
+        <a href="ucontacto.html" ><h2>contactanos</h2>
+            <img src="static/img/contacto0.jpg" width="70%">
+           </a>
+            <img src="static/img/redes.png" width="50%" >
+       
+            <div id="redes">
+                   <a href="https://twitter.com/tiendas3b/" target="blank"><img src="static/img/twitter.png"></a>
+                   <a href="https://www.facebook.com/Tiendas3B/" target="blank"><img src="static/img/facebook.png"></a>
+                   <a href="https://www.youtube.com/user/Tiendas3BBB" target="blank"><img src="static/img/youtube.png"></a>
+                   <a href="https://mx.linkedin.com/company/tiendas3b/" target="blank"><img src="static/img/linkedin.png"></a>
+           </div>  <br>
+           <div id="des">
+               <a href="portafolioequipo.html" target="blank" ><h4>SOBRE<br>DESARROLLADORES</h4></a>
+           </div>
+       
+    </section>
+
+    <script type="text/javascript">
+        //javascript for navigation bar effect on scroll
+        window.addEventListener("scroll", function() {
+            var header = document.querySelector("header");
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+
+        //javascript for responsive navigation sidebar menu
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu-btn');
+        var closeBtn = document.querySelector('.close-btn');
+
+        menuBtn.addEventListener("click", () => {
+            menu.classList.add('active');
+        });
+
+        closeBtn.addEventListener("click", () => {
+            menu.classList.remove('active');
+        });
+    </script>
+
+</body>
+
+</html>

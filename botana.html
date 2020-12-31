@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOTANAS</title>
+    <link rel="icon" href="static/img/logo.ico">
+    <link rel="stylesheet" href="static/css/navegadorofical.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="static/css/botanas.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" class="brand">tiendas 3b</a>
+        <div class="menu">
+            <div class="btn">
+                <i class="fas fa-times close-btn"></i>
+            </div>
+            <a class="nav-link" href="index.html">Home <i class="fas fa-home"></i></a> 
+            <a class="nav-link" href="contacto.html">contacto</a>
+            <a class="nav-link" href="registro.html">Registrarse/Ingresar</a>
+                 
+        </div>
+        <div class="btn">
+            <i class="fas fa-bars menu-btn"></i>
+        </div>
+    </header>
+    <section class="section-main" backgraund= "static/img/botanas/c44ff0_492b1813ab5a4b9f97c5566586e75289_mv2.jpg">
+        
+        <div class="container">
+            <div class="card">
+                <img src="static/img/botanas/descarga (1).jpg">
+                <h4>Master Chips 50g<br>$18</h1>
+            </div>
+    
+            <div class="card">
+                <img src="static/img/botanas/descarga (2).jpg">
+                <h4>Sabritas Limón 50g<br>$14.00</h1>
+            </div>
+    
+            <div class="card">
+                <img src="static/img/botanas/descarga (3).jpg">
+                <h4>Ruffles 50g<br>$13.00</h1>
+            </div>
+    
+            <div class="card">
+                <img src="static/img/botanas/descarga (4).jpg">
+                <h4>Papas Sabritas Picantes 50g<br>$13</h1>
+            </div>
+    
+            <div class="card">
+                <img src="static/img/botanas/descarga (5).jpg">
+                <h4>Mezcladito 280g<br>$38.50</h1>
+            </div>
+    
+            <div class="card">
+                <img src="static/img/botanas/descarga (6).jpg">
+                <h4>Quexo 280g<br>$38.50</h1>
+            </div>
+    
+            <div class="card">
+                <img src="static/img/botanas/descarga (7).jpg">
+                <h4>Pa´su mecha 280g<br>$38.50</h1>
+            </div>
+    
+            <div class="card">
+                <img src="static/img/botanas/descarga (8).jpg">
+                <h4>Totis Limón 50g<br>$11.00</h1>
+            </div>
+    
+            <div class="card">
+                <img src="static/img/botanas/descarga (9).jpg">
+                <h4>Totis Picante 50g<br>$11.00</h1>
+            </div>
+    
+            <div class="card">
+                <img src="static/img/botanas/descarga (13).jpg">
+                <h4>Cheetos<br>$9.00</h1>
+            </div>
+    
+            <div class="card">
+                <img src="static/img/botanas/descarga (15).jpg">
+                <h4>Cheetos poffs<br>$9.00</h1>
+            </div>
+    
+            <div class="card">
+                <img src="static/img/botanas/descarga (14).jpg">
+                <h4>Cheetos flaming hot<br>$9.00</h1>
+            </div>
+    
+        </div>
+    </section>
+    
+    <script type="text/javascript">
+        //javascript for navigation bar effect on scroll
+        window.addEventListener("scroll", function() {
+            var header = document.querySelector("header");
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+
+        //javascript for responsive navigation sidebar menu
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu-btn');
+        var closeBtn = document.querySelector('.close-btn');
+
+        menuBtn.addEventListener("click", () => {
+            menu.classList.add('active');
+        });
+
+        closeBtn.addEventListener("click", () => {
+            menu.classList.remove('active');
+        });
+    </script>
+
+</body>

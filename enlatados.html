@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENLATADOS</title>
+    <link rel="icon" href="static/img/logo.ico">
+    <link rel="stylesheet" href="static/css/navegadorofical.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="static/css/duff.css">
+    <link rel="stylesheet" href="static/css/enlatados.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" class="brand">tiendas 3b</a>
+        <div class="menu">
+            <div class="btn">
+                <i class="fas fa-times close-btn"></i>
+            </div>
+            <a class="nav-link" href="index.html">Home <i class="fas fa-home"></i></a> 
+            <a class="nav-link" href="contacto.html">contacto</a>
+            <a class="nav-link" href="registro.html">Registrarse/Ingresar</a>
+                 
+        </div>
+        <div class="btn">
+            <i class="fas fa-bars menu-btn"></i>
+        </div>
+    </header>
+    <section class="section-main">
+    
+        <div class="container">
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.cueLYDAaBpO1qKRbm_-LcQHaHa?pid=Api&rs=1">
+                <h4>ATUN  $28.00</h1>
+            </div>
+            <div class="card">
+                <img src="https://cdn.shopify.com/s/files/1/0080/1076/0255/products/chiles_rajas_220_g_la_costena_5c0c6e41-3c44-478a-ab8b-7f36efda61a4_800x800.jpg?v=1564779812">
+                <h4>CHILES RAJAS $15.00</h1>
+            </div>
+            <div class="card">
+                <img src="https://www.superama.com.mx/Content/images/products/img_large/0750105861787L.jpg">
+                <h4> LECHERA $13.00</h1>
+            </div>
+            <div class="card">
+                <img src="https://cdn.byprice.com/0f120d7e-002d-43e9-b731-57d91d37887d/300_300.png">
+                <h4>FRIJOLES $20.50</h1>
+            </div>
+            <div class="card">
+                <img src="https://http2.mlstatic.com/dolores-sardina-tomate-lata-425-gr-D_NQ_NP_823492-MLM31234887129_062019-F.jpg">
+                <h4>SARDINA $30</h1>
+            </div>
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.TSrDWP8eRNGzpklz2YPCbwAAAA?pid=Api&rs=1">
+                <h4>CHILES CHIPOTLES $22.50</h1>
+            </div>
+            <div class="card">
+                <img src="https://cdn.shopify.com/s/files/1/0706/6309/products/mayoreototal-lata-duraznos-en-mitades-en-almibar-de-3000-grs-la-costena-conservas-la-costena-sku_large.png?v=1518350093">
+                <h4>DURAZNOS $33</h1>
+            </div>
+            <div class="card">
+                <img src="https://lagranbodega.vteximg.com.br/arquivos/ids/265400-1000-1000/04CCOS040_1.jpg?v=636868962040230000">
+                <h4>ENSALADA DE VERDURAS $10.50</h1>
+            </div>
+            
+        </div>
+
+    </section>
+    
+    <script type="text/javascript">
+        //javascript for navigation bar effect on scroll
+        window.addEventListener("scroll", function() {
+            var header = document.querySelector("header");
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+
+        //javascript for responsive navigation sidebar menu
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu-btn');
+        var closeBtn = document.querySelector('.close-btn');
+
+        menuBtn.addEventListener("click", () => {
+            menu.classList.add('active');
+        });
+
+        closeBtn.addEventListener("click", () => {
+            menu.classList.remove('active');
+        });
+    </script>
+
+</body>
+
+</html>
